@@ -1,0 +1,16 @@
+title: iamhe.art
+description: 생각과 경험을 천천히 쌓아가는 개인 블로그.
+url: https://iamhe.art
+baseurl: ""
+lang: ko
+timezone: Asia/Seoul
+permalink: /posts/:title/
+markdown: kramdown
+plugins: [jekyll-feed, jekyll-sitemap]
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude: [README.md, Gemfile, Gemfile.lock, scripts, vendor]
