@@ -1,10 +1,10 @@
 # iamhe.art
 
-Jekyll 기반 개인 블로그. 소스는 프라이빗 저장소에 보관하고 웹사이트는 공개합니다.
+Jekyll 기반 개인 블로그. 퍼블릭 저장소에서 GitHub Pages 무료 플랜으로 운영합니다.
 
 ## 최초 설정
 
-프라이빗 저장소의 Pages에는 GitHub Pro 또는 해당 유료 조직 플랜이 필요합니다.
+퍼블릭 저장소이므로 GitHub Pro 구독 없이 GitHub Pages를 사용할 수 있습니다.
 
 1. https://github.com/unumest/iamheart/settings/pages → Build and deployment → Source를 **GitHub Actions**로 설정합니다.
 2. Custom domain에 **iamhe.art**를 저장합니다. Actions 배포에서는 CNAME 파일만으로 도메인이 설정되지 않습니다.
