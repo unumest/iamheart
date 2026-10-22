@@ -50,6 +50,12 @@ Markdown으로 본문을 작성합니다.
 설정은 _config.yml, 소개는 about.md, 디자인은 assets/style.css에서 수정합니다.
 첫 번째 기록은 시작용 예시이므로 수정하거나 삭제해도 됩니다.
 
+## 방문자 통계
+
+공통 푸터에 [PV Counter](https://count.newnius.com/)의 최근 24시간 및 전체 순 방문자 수(UV)를 표시합니다. 최근 24시간은 자정 기준의 오늘 방문자 수와 다릅니다.
+운영 빌드에서만 외부 집계 스크립트를 불러오므로 기본 로컬 미리보기는 집계하지 않습니다. 스크립트가 차단되거나 서비스에 연결할 수 없으면 숫자 대신 `—`가 표시됩니다.
+표시 코드와 스크립트는 `_layouts/default.html`에 있습니다.
+
 ## 로컬 미리보기
 
 Ruby와 Bundler 설치 후 `bundle install`, `bundle exec jekyll serve`를 실행하고 http://localhost:4000 에 접속합니다.

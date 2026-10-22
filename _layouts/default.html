@@ -18,5 +18,12 @@
 <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="iamhe.art 홈">iamhe<span>.</span>art</a>
 <nav aria-label="주 메뉴"><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>글</a><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>소개</a><a href="{{ '/feed.xml' | relative_url }}">RSS ↗</a></nav>
 </header><main id="main">{{ content }}</main>
-<footer><span>© {{ 'now' | date: '%Y' }} iamhe.art</span><span>조금씩, 오래도록.</span></footer></div>
+<footer>
+<span>© {{ 'now' | date: '%Y' }} iamhe.art</span>
+<span class="visitor-count" aria-label="방문자 통계">최근 24시간 <span class="cr_count_site_uv_24h">—</span>명 · 전체 <span class="cr_count_site_uv">—</span>명</span>
+<span>조금씩, 오래도록.</span>
+</footer></div>
+{% if jekyll.environment == 'production' %}
+<script async src="https://count.newnius.com/ea.pure.js"></script>
+{% endif %}
 </body></html>
