@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<article class="article"><a class="back" href="{{ '/' | relative_url }}">← 글 목록</a>
+<header class="article-heading"><p class="eyebrow">{{ page.category | default: '기록' | escape }}</p><h1>{{ page.title | escape }}</h1>{% if page.description %}<p class="intro-copy">{{ page.description | escape }}</p>{% endif %}</header>
+<div class="prose">{{ content }}</div>
+<nav class="post-nav" aria-label="다른 글">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title | escape }}</a>{% endif %}{% if page.next %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} →</a>{% endif %}</nav></article>
